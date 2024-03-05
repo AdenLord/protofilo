@@ -1,0 +1,200 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  font-weight: 400;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background-image: url(img/pic1.jpg);
+  background-size: 100%;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  line-height: 1.5;
+  text-align: left;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  height: 90vh;
+  width: 160vh;
+  margin: auto;
+  padding: 50px;
+  color: #efff0f;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+/* --------------------navbar -----------*/
+
+.navbar-bottom{
+  background: #efff0f;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.m-nav{
+  display: flex;
+  justify-content: start;
+  margin-bottom: 0;
+}
+
+.m-nav a{
+  color: #efff0f;
+  font-size: 25px;
+  transition: background 0.6s ease-out;
+  border-top-right-radius: 50% ;
+  border-top-left-radius: 50% ;
+  padding: 10px;
+}
+
+.m-nav a:link{
+  text-decoration: none;
+}
+
+.m-nav li{
+  height: 40px;
+  list-style: none;
+  margin:0 10px;
+}
+
+.m-nav li a:hover{
+  background: #efff0f;
+  color: #3e0cc9;
+}
+
+.active{
+  background: #efff0f;
+  color: #3e0cc9!important;
+}
+
+
+/*------------ home--------------------------------------- */
+
+.home{
+  margin: 50px;
+  text-align: left;
+}
+
+.m-btn {
+    margin: 20px;
+    border: 2px solid black;
+    background-color: #ffffff00;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: #efff0f;;
+    color: #efff0f;
+    border-radius: 10px;
+  }
+
+.m-btn:hover{
+  color: #3e0cc9;
+  background-color: #efff0f;
+}
+
+.animeBtn{
+  animation: animBtn 1.5s ease-in ;
+  position: relative;
+}
+
+@keyframes animBtn{
+  0% {left: 0px ; top:300px;}
+  100% {left: 0px ; top:0px;}
+}
+
+/* -------------------------------contact info page */
+
+.contact{
+  margin: 30px 0;
+  padding: 30px;
+  border-left:#efff0f 3px solid;
+}
+
+.contact div p{
+  padding: 0 15px;
+}
+
+.title{
+  font-size: 24px;
+}
+
+.data{
+  display: inline;
+  font-size: 18px;
+  transition: background 0.6s ease-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.data:hover{
+  color: #3e0cc9;
+  background-color: #efff0f;
+}
+
+
+.animeBox{
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation-name: animeBox;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
+.animeBox-S{
+  animation: animeBoxS 2.3s ease-in ;
+  position: relative;
+}
+
+@keyframes animeBox {
+  0% {left: 300px ; top:0;}
+  100% {left: 0px ; top:0px;}
+}
+
+@keyframes animeBoxS {
+  0% {left: 350px ; top:0;}
+  100% {left: 0px ; top:0px;}
+}
+
+/*-------------------abuot me page-------*/
+
+
+#skillBox{
+  margin: 30px 0;
+  padding: 30px;
+  border-left:#efff0f 3px solid;
+}
+
+.accordion{
+  --bs-accordion-color: #efff0f !important;
+  --bs-accordion-bg: #00000000 !important;
+  --bs-accordion-border-color: #efff0f !important;
+}
+
+.accordion-button{
+  color: #efff0f !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #3e0cc9 !important;
+  background:  #efff0f !important;
+}
